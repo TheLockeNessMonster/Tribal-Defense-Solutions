@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_IncendiaryLauncher</defName>
+		<label>Thrown_Torch</label>
+		<graphicData>
+			<texPath>Things/Projectile/InfernoCannonShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>20</speed>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<explosionRadius>0.2</explosionRadius>
+			<preExplosionSpawnThingDef>FilthFuel</preExplosionSpawnThingDef>
+			<explosionSpawnChance>0.6</explosionSpawnChance>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseMakeableNeolithicWeapon">
+		<defName>Gun_ThrowingTorch</defName>
+		<label>Throwing Torch</label>
+		<description>Throwing torch. Starts fires.</description>
+		<graphicData>
+			<texPath>stuff/ThrowingTorch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+		<generateCommonality>0.4</generateCommonality>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.20</AccuracyMedium>
+			<AccuracyLong>0.10</AccuracyLong>
+			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<WoodLog>75</WoodLog>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_IncendiaryLauncher</projectileDef>
+				<ai_IsIncendiary>true</ai_IsIncendiary>
+				<warmupTime>2.0</warmupTime>
+				<range>24</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ShotIncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+</ThingDefs>

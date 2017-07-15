@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+<ThingDef ParentName="BaseWeapon">
+    <defName>Weapon_FireBomb</defName>
+    <label>Fire Bomb</label>
+    <description>Pots filled with oil, with a burning wick in the top. A favorite weapon of pyromaniacs and tribal leaders alike. Most commonly used for excellent entertainment...Throw it at your enemies and watch them flounder in the blooming flames...Sit atop a hill and watch the smoke plume rise slowly into the night sky, then when morning arises watch the embers slowly die...Just like your enemies.</description>
+    <graphicData>
+      <texPath>stuff/Bomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractMolotovCocktail</soundInteract>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <MarketValue>200</MarketValue>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw Fire Bomb</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>15</range>
+        <forcedMissRadius>2.9</forcedMissRadius>
+        <warmupTime>1.0</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        <soundCast>ThrowMolotovCocktail</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <projectileDef>Proj_FireBomb</projectileDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_FireBomb</defName>
+		<label>Fire bomb</label>
+		<graphicData>
+			<texPath>stuff/Bomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.1</explosionRadius>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<preExplosionSpawnThingDef>FilthFuel</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+<RecipeDef>
+
+<defName>MakeFireBomb</defName>
+
+ <label>make Fire Bomb</label>
+
+    <description>Create a firebomb.</description>
+
+    <jobString>Trying not to spontaniously combust.</jobString>
+    <workAmount>150</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Repair</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+       <workSkill>Crafting</workSkill>
+        <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+
+      
+<ingredients>
+      <li>
+<filter>
+<ThingDefs>
+<li>WoodLog</li>
+</ThingDefs>
+           </filter>
+          <count>20</count>
+      </li>
+      <li>
+<filter>
+<ThingDefs>
+<li>Beer</li>
+</ThingDefs>
+           </filter>
+          <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Weapon_FireBomb>1</Weapon_FireBomb>
+    </products>
+    
+ 
+</RecipeDef>
+</ThingDefs>

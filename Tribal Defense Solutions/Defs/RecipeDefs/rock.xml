@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+
+<ThingDef ParentName="ResourceBase">
+
+    <defName>Rocks</defName>
+
+    <label>Rocks</label>
+
+    <description>Litterally a rock of no decernable type</description>
+
+    <graphicData>
+
+      <texPath>stuff/rock</texPath>
+
+      <graphicClass>Graphic_Single</graphicClass>
+
+    </graphicData>
+
+    <soundInteract>Grain_Drop</soundInteract>
+
+    <soundDrop>Grain_Drop</soundDrop>
+
+    <statBases>
+
+      <MarketValue>5</MarketValue>
+
+      <MaxHitPoints>200</MaxHitPoints>
+
+      <Mass>0.4</Mass>
+
+      <Flammability>0</Flammability>
+
+      <DeteriorationRate>0.1</DeteriorationRate>
+
+    </statBases>
+
+    <stuffProps>
+
+      <stuffAdjective>Rocks</stuffAdjective>
+
+      <categories>
+
+        <li>Stony</li>
+
+      </categories>
+
+      <commonality>0.5</commonality>
+
+      <color>(255,228,181)</color>
+
+      <constructEffect>ConstructWood</constructEffect>
+
+      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+
+        <statOffsets>
+
+        <Beauty>1</Beauty>
+
+      </statOffsets>
+
+      <statFactors>
+
+        <MaxHitPoints>1.5</MaxHitPoints>
+
+        <Beauty>1.25</Beauty>
+
+        <Flammability>1</Flammability>
+
+        <WorkToMake>0.7</WorkToMake>
+
+        <WorkToBuild>0.7</WorkToBuild>
+
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+
+      </statFactors>
+
+    </stuffProps>
+
+    <thingCategories>
+
+      <li>Chunks</li>
+
+    </thingCategories>
+
+    <techHediffsTags>
+
+      <li>Poor</li>
+
+    </techHediffsTags>
+
+</ThingDef>
+
+
+<RecipeDef>
+
+<defName>MakeStone</defName>
+
+ <label>make stone</label>
+
+    <description>hitting your fist against Chunks to make stones Yes you are a big man.</description>
+
+    <jobString>Making Rocks.</jobString>
+    <workAmount>50</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Repair</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+       <workSkill>Crafting</workSkill>
+<recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+
+      
+    <ingredients>
+<li>
+<filter>
+<categories>
+<li>StoneChunks</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+    </ingredients>
+    <products>
+      <Rocks>20</Rocks>
+    </products>
+    <fixedIngredientFilter>
+<categories>
+<li>StoneChunks</li>
+</categories>
+</fixedIngredientFilter>
+ 
+</RecipeDef>
+</Defs>
+

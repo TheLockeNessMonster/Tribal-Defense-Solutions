@@ -1,0 +1,41 @@
+
+<ThingDefs>
+  <ThingDef ParentName="BaseMakeableNeolithicWeapon">
+    <defName>Gun_GravelPouch</defName>
+    <label>Gravel Pouch</label>
+    <description>A pouch full of gravel. Throws multiple(20) stones at an enemy with high accuracy, medium range but it is very weak.</description>
+    <graphicData>
+      <texPath>stuff/Gravel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractShotgun</soundInteract>
+		<generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>1.0</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Rocks>40</Rocks>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Pistol</projectileDef>
+        <warmupTime>1.0</warmupTime>
+        <range>20</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <SoundCast>ThrowMolotovCocktail</SoundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</ThingDefs>

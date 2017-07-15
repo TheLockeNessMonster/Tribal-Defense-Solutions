@@ -1,0 +1,50 @@
+<ThingDefs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Pebble</defName>
+    <label>Thrown Pebble</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <DamageAmountBase>5</DamageAmountBase>
+      <Speed>40</Speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseMakeableNeolithicWeapon">
+    <defName>Gun_Pebble</defName>
+    <label>Pebble</label>
+    <description>A very small rock...does little damage but is fast to fire and has long range</description>
+    <graphicData>
+      <texPath>stuff/Pebbles</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>1.0</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Rocks>20</Rocks>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Pistol</projectileDef>
+        <warmupTime>0.5</warmupTime>
+        <range>30</range>
+        <soundCast>ShotPistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+</ThingDefs>

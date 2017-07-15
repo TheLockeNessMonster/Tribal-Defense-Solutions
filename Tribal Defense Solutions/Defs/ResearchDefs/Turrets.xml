@@ -1,0 +1,11 @@
+<ResearchProjectDefs>
+	<ResearchProjectDef>
+		<defName>AnimalHousing</defName>
+		<label>Animal Housing</label>
+		<description>Allows the construction of houses and hives for animals(Turrets).</description>
+		<baseCost>800</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>8</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+</ResearchProjectDefs>
