@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
 <ThingDefs>
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt">
 		<defName>MeleeWeapon_Whip</defName>
@@ -19,9 +21,13 @@
 			<MeleeWeapon_Cooldown>1.5</MeleeWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
+		<costStuffCount>30</costStuffCount>
 		<costList>
       		<Rope>5</Rope>
-    		</costList>
+    	</costList>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
 		<recipeMaker>
 			<recipeUsers>
 				<li>ElectricSmithy</li>

@@ -1,10 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
 <ThingDefs>
    <ThingDef ParentName="BuildingBase">
     <defName>SwanPond</defName>
     <label>Swan Pond</label>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>stuff/Swan Pond</texPath>
+      <texPath>stuff/Mine/Swan_Pond</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <damageData>
@@ -48,7 +50,7 @@
 			<ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>GunSwanPond</turretGunDef>
       <turretBurstCooldownTime>5.15</turretBurstCooldownTime>
-      <turretTopgraphicPath>stuff/Swan Pond</turretTopgraphicPath>
+      <turretTopgraphicPath>stuff/Mine/Swan_Pond</turretTopgraphicPath>
     </building>
     <researchPrerequisites>
       <li>AnimalHousing</li>
@@ -73,7 +75,7 @@
     <defName>GunSwanPond</defName>
     <label>Swan Pond</label>
     <graphicData>
-      <texPath>stuff/Swan Pond</texPath>
+      <texPath>stuff/Mine/Swan_Pond</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <menuHidden>true</menuHidden>

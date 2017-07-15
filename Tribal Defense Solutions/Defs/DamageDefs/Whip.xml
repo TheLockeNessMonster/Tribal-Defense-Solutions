@@ -1,10 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
   <DamageDef ParentName="LocalInjuryBase">
     <defName>Whip_Cut</defName>
     <label>Slash</label>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been Whipped to death.</deathMessage>
-    <hediff>Slash</hediff>
+    <hediff>Cut</hediff>
     <hediffSolid>Crack</hediffSolid>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Slice</impactSoundType>
