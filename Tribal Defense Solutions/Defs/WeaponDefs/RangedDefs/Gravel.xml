@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 
 <ThingDefs>
   <ThingDef ParentName="BaseMakeableNeolithicWeapon">
@@ -5,7 +6,7 @@
     <label>Gravel Pouch</label>
     <description>A pouch full of gravel. Throws multiple(20) stones at an enemy with high accuracy, medium range but it is very weak.</description>
     <graphicData>
-      <texPath>stuff/Gravel</texPath>
+      <texPath>stuff/Mine/Gravel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>InteractShotgun</soundInteract>

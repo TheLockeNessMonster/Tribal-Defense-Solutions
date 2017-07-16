@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <ThingDefs>
 <ThingDef ParentName="BaseWeapon">
     <defName>Weapon_FireBomb</defName>
     <label>Fire Bomb</label>
     <description>Pots filled with oil, with a burning wick in the top. A favorite weapon of pyromaniacs and tribal leaders alike. Most commonly used for excellent entertainment...Throw it at your enemies and watch them flounder in the blooming flames...Sit atop a hill and watch the smoke plume rise slowly into the night sky, then when morning arises watch the embers slowly die...Just like your enemies.</description>
     <graphicData>
-      <texPath>stuff/Bomb</texPath>
+      <texPath>stuff/Mine/Bomb</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>InteractMolotovCocktail</soundInteract>
@@ -45,7 +46,7 @@
 		<defName>Proj_FireBomb</defName>
 		<label>Fire bomb</label>
 		<graphicData>
-			<texPath>stuff/Bomb</texPath>
+			<texPath>stuff/Mine/Bomb</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>

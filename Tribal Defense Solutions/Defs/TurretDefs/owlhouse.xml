@@ -1,10 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
 <ThingDefs>
    <ThingDef ParentName="BuildingBase">
     <defName>OwlHouse</defName>
     <label>Owl House</label>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>stuff/Owl House</texPath>
+      <texPath>stuff/Mine/Owl House</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <damageData>
@@ -48,7 +50,7 @@
 			<ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>GunOwlHouse</turretGunDef>
       <turretBurstCooldownTime>5.15</turretBurstCooldownTime>
-      <turretTopgraphicPath>stuff/Owl</turretTopgraphicPath>
+      <turretTopgraphicPath>stuff/Mine/Owl</turretTopgraphicPath>
     </building>
     <researchPrerequisites>
       <li>AnimalHousing</li>
@@ -59,7 +61,7 @@
     <defName>Owl</defName>
     <label>Owl</label>
     <graphicData>
-      <texPath>stuff/Owl</texPath>
+      <texPath>stuff/Mine/Owl</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -73,7 +75,7 @@
     <defName>GunOwlHouse</defName>
     <label>Owl House</label>
     <graphicData>
-      <texPath>stuff/Owl House</texPath>
+      <texPath>stuff/Mine/Owl House</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <menuHidden>true</menuHidden>

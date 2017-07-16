@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
 <ThingDefs>
  <ThingDef ParentName="BaseBullet">
     <defName>Bullet_Pebble</defName>
@@ -18,7 +20,7 @@
     <label>Pebble</label>
     <description>A small rock...does medium damage and is okay to fire and has medium range</description>
     <graphicData>
-      <texPath>stuff/Stones</texPath>
+      <texPath>stuff/Mine/Stones</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>InteractPistol</soundInteract>

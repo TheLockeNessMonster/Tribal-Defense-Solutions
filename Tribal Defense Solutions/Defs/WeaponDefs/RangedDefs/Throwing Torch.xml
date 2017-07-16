@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <ThingDefs>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_IncendiaryLauncher</defName>
@@ -23,7 +24,7 @@
 		<label>Throwing Torch</label>
 		<description>Throwing torch. Starts fires.</description>
 		<graphicData>
-			<texPath>stuff/ThrowingTorch</texPath>
+			<texPath>stuff/Mine/ThrowingTorch</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>InteractRifle</soundInteract>
